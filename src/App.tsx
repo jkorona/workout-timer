@@ -1,14 +1,12 @@
-import PWABadge from './PWABadge.tsx'
-import './App.css'
 
+import { HStack, Button } from "@chakra-ui/react";
 function App() {
   return (
-    <>
-      <h1>Better workouts</h1>
-      <p>Under construction...</p>
-      <PWABadge />
-    </>
-  )
+    <HStack gap="3">
+      <Button>Better Workouts</Button>
+      <Button>Under construction</Button>
+    </HStack>
+  );
 }
 
-export default App
+export default App;
