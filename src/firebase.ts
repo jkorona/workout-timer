@@ -7,13 +7,13 @@ import { getAnalytics } from "firebase/analytics";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyC4Z9qHAuQhs8E3ssOWpbrVD2kvLEcD68o",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "workout-timer-platform.firebaseapp.com",
   projectId: "workout-timer-platform",
   storageBucket: "workout-timer-platform.firebasestorage.app",
-  messagingSenderId: "337164851003",
-  appId: "1:337164851003:web:cc54d015169f4b0435091e",
-  measurementId: "G-XE2PGR2KPT"
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
